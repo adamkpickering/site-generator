@@ -13,6 +13,7 @@ and markdown for content.
   - including a scan for broken links
 - example website
 - add instructions for installation
+- add automatic creation of given destination directory
 
 ## How it Works
 
