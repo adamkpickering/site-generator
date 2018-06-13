@@ -20,7 +20,6 @@ class File(object):
     def __init__(self, parent, file_name):
         self.parent = parent
         self.name, self.extension = file_name.split('.')
-        #self.name = os.path.split(self.source_path)[1].split('.')[0]
         self.content = self.get_content()
         print("initializing File {}".format(self.dest_path))
 
@@ -187,24 +186,6 @@ def process_jinja2_template(environment, content, **kwargs):
     template = environment.from_string(content)
     page = template.render(**kwargs)
     return page
-
-
-
-
-def get_pretty_title(path):
-    if os.path.isdir(path):
-        return
-        #ugly_title = os.path.split(path)
-        #print(ugly_title)
-    else:
-        with open(path, 'r') as fd:
-            title = fd.readline().split('#')[1].strip()
-            return title
-
-
-def get_back_path(path):
-    elements = path.split('/')
-    return os.path.join(*elements[0:len(elements)-1])
 
 
 if __name__ == "__main__":
