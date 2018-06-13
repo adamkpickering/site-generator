@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-# ideas:
-# - following compilation, scan for broken links
-# - consider splitting directories and files
-
 import os
 import shutil
 from jinja2 import Template, Environment, FileSystemLoader
