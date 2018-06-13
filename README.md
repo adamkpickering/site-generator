@@ -11,3 +11,18 @@ and markdown for content.
 - improve the CSS
 - ansible deploy scripts
   - including a scan for broken links
+- example website
+- add instructions for installation
+
+## How it Works
+
+site-generator is for those who want the simplest possible website.
+How to make a website:
+
+1. Follow the instructions for installation.
+1. Create a directory. This will be the root of your website.
+1. Add markdown files for content, or directories.
+   The structure of the root will be reflected in the URL structure of your website.
+   If you want to add content to indexes, create `index.md` files in those directories.
+1. Run `./compile.py` to compile the website.
+1. More to come, once I've done the deployment part...
