@@ -14,6 +14,8 @@ and markdown for content.
 - example website
 - add instructions for installation
 - add automatic creation of given destination directory
+- add a monitor for file changes (also automate dev server) so that they show up in
+  browser automatically
 
 ## How it Works
 
